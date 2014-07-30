@@ -102,24 +102,19 @@ extern const UIButton *buttonExtern;
 {
     [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
 }
-
 /*
- //代理方法（可选实现）
- - (void)RootViewDelegateOptional:(UIButton *)button
- {
+//代理方法（可选实现）
+- (void)RootViewDelegateOptional:(UIButton *)button
+{
  [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
- }
+}
  */
-
 #pragma mark - KVO Methods
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if ([keyPath isEqualToString:@"KVONumber"]) {
-        if (imageNum == 7) {
-            imageNum = -1;
-        }imageNum++;
-        self.view.backgroundColor = [UIColor colorWithPatternImage:image[imageNum]];
+        [self click];
     }
 }
 
