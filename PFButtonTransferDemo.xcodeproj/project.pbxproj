@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEF123A01988806900E025FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1239F1988806900E025FE /* Foundation.framework */; };
+		CEF123A21988806900E025FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF123A11988806900E025FE /* CoreGraphics.framework */; };
+		CEF123A41988806900E025FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF123A31988806900E025FE /* UIKit.framework */; };
+		CEF123AA1988806900E025FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF123A81988806900E025FE /* InfoPlist.strings */; };
+		CEF123AC1988806900E025FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF123AB1988806900E025FE /* main.m */; };
+		CEF123B01988806900E025FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF123AF1988806900E025FE /* AppDelegate.m */; };
+		CEF123B21988806900E025FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF123B11988806900E025FE /* Images.xcassets */; };
+		CEF123B91988806900E025FE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF123B81988806900E025FE /* XCTest.framework */; };
+		CEF123BA1988806900E025FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1239F1988806900E025FE /* Foundation.framework */; };
+		CEF123BB1988806900E025FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF123A31988806900E025FE /* UIKit.framework */; };
+		CEF123C31988806900E025FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEF123C11988806900E025FE /* InfoPlist.strings */; };
+		CEF123C51988806900E025FE /* PFButtonTransferDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF123C41988806900E025FE /* PFButtonTransferDemoTests.m */; };
+		CEF123D01988807F00E025FE /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF123CF1988807F00E025FE /* RootView.m */; };
+		CEF123D31988809400E025FE /* RootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF123D21988809400E025FE /* RootVC.m */; };
+		CEF123D5198880F800E025FE /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEF123D4198880F800E025FE /* images.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEF123BC1988806900E025FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF123941988806900E025FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF1239B1988806900E025FE;
+			remoteInfo = PFButtonTransferDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEF1239C1988806900E025FE /* PFButtonTransferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFButtonTransferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF1239F1988806900E025FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEF123A11988806900E025FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEF123A31988806900E025FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEF123A71988806900E025FE /* PFButtonTransferDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PFButtonTransferDemo-Info.plist"; sourceTree = "<group>"; };
+		CEF123A91988806900E025FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEF123AB1988806900E025FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF123AD1988806900E025FE /* PFButtonTransferDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PFButtonTransferDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CEF123AE1988806900E025FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEF123AF1988806900E025FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEF123B11988806900E025FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEF123B71988806900E025FE /* PFButtonTransferDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PFButtonTransferDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF123B81988806900E025FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CEF123C01988806900E025FE /* PFButtonTransferDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PFButtonTransferDemoTests-Info.plist"; sourceTree = "<group>"; };
+		CEF123C21988806900E025FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEF123C41988806900E025FE /* PFButtonTransferDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFButtonTransferDemoTests.m; sourceTree = "<group>"; };
+		CEF123CE1988807F00E025FE /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		CEF123CF1988807F00E025FE /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		CEF123D11988809400E025FE /* RootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootVC.h; sourceTree = "<group>"; };
+		CEF123D21988809400E025FE /* RootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootVC.m; sourceTree = "<group>"; };
+		CEF123D4198880F800E025FE /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF123991988806900E025FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF123A21988806900E025FE /* CoreGraphics.framework in Frameworks */,
+				CEF123A41988806900E025FE /* UIKit.framework in Frameworks */,
+				CEF123A01988806900E025FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF123B41988806900E025FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF123B91988806900E025FE /* XCTest.framework in Frameworks */,
+				CEF123BB1988806900E025FE /* UIKit.framework in Frameworks */,
+				CEF123BA1988806900E025FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEF123931988806900E025FE = {
+			isa = PBXGroup;
+			children = (
+				CEF123A51988806900E025FE /* PFButtonTransferDemo */,
+				CEF123BE1988806900E025FE /* PFButtonTransferDemoTests */,
+				CEF1239E1988806900E025FE /* Frameworks */,
+				CEF1239D1988806900E025FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF1239D1988806900E025FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1239C1988806900E025FE /* PFButtonTransferDemo.app */,
+				CEF123B71988806900E025FE /* PFButtonTransferDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF1239E1988806900E025FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1239F1988806900E025FE /* Foundation.framework */,
+				CEF123A11988806900E025FE /* CoreGraphics.framework */,
+				CEF123A31988806900E025FE /* UIKit.framework */,
+				CEF123B81988806900E025FE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF123A51988806900E025FE /* PFButtonTransferDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CEF123AE1988806900E025FE /* AppDelegate.h */,
+				CEF123AF1988806900E025FE /* AppDelegate.m */,
+				CEF123D11988809400E025FE /* RootVC.h */,
+				CEF123D21988809400E025FE /* RootVC.m */,
+				CEF123CE1988807F00E025FE /* RootView.h */,
+				CEF123CF1988807F00E025FE /* RootView.m */,
+				CEF123D4198880F800E025FE /* images.bundle */,
+				CEF123B11988806900E025FE /* Images.xcassets */,
+				CEF123A61988806900E025FE /* Supporting Files */,
+			);
+			path = PFButtonTransferDemo;
+			sourceTree = "<group>";
+		};
+		CEF123A61988806900E025FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEF123A71988806900E025FE /* PFButtonTransferDemo-Info.plist */,
+				CEF123A81988806900E025FE /* InfoPlist.strings */,
+				CEF123AB1988806900E025FE /* main.m */,
+				CEF123AD1988806900E025FE /* PFButtonTransferDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEF123BE1988806900E025FE /* PFButtonTransferDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEF123C41988806900E025FE /* PFButtonTransferDemoTests.m */,
+				CEF123BF1988806900E025FE /* Supporting Files */,
+			);
+			path = PFButtonTransferDemoTests;
+			sourceTree = "<group>";
+		};
+		CEF123BF1988806900E025FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEF123C01988806900E025FE /* PFButtonTransferDemoTests-Info.plist */,
+				CEF123C11988806900E025FE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF1239B1988806900E025FE /* PFButtonTransferDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF123C81988806900E025FE /* Build configuration list for PBXNativeTarget "PFButtonTransferDemo" */;
+			buildPhases = (
+				CEF123981988806900E025FE /* Sources */,
+				CEF123991988806900E025FE /* Frameworks */,
+				CEF1239A1988806900E025FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PFButtonTransferDemo;
+			productName = PFButtonTransferDemo;
+			productReference = CEF1239C1988806900E025FE /* PFButtonTransferDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEF123B61988806900E025FE /* PFButtonTransferDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF123CB1988806900E025FE /* Build configuration list for PBXNativeTarget "PFButtonTransferDemoTests" */;
+			buildPhases = (
+				CEF123B31988806900E025FE /* Sources */,
+				CEF123B41988806900E025FE /* Frameworks */,
+				CEF123B51988806900E025FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF123BD1988806900E025FE /* PBXTargetDependency */,
+			);
+			name = PFButtonTransferDemoTests;
+			productName = PFButtonTransferDemoTests;
+			productReference = CEF123B71988806900E025FE /* PFButtonTransferDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF123941988806900E025FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = PFei_He;
+				TargetAttributes = {
+					CEF123B61988806900E025FE = {
+						TestTargetID = CEF1239B1988806900E025FE;
+					};
+				};
+			};
+			buildConfigurationList = CEF123971988806900E025FE /* Build configuration list for PBXProject "PFButtonTransferDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEF123931988806900E025FE;
+			productRefGroup = CEF1239D1988806900E025FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF1239B1988806900E025FE /* PFButtonTransferDemo */,
+				CEF123B61988806900E025FE /* PFButtonTransferDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF1239A1988806900E025FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF123AA1988806900E025FE /* InfoPlist.strings in Resources */,
+				CEF123D5198880F800E025FE /* images.bundle in Resources */,
+				CEF123B21988806900E025FE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF123B51988806900E025FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF123C31988806900E025FE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF123981988806900E025FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF123D31988809400E025FE /* RootVC.m in Sources */,
+				CEF123B01988806900E025FE /* AppDelegate.m in Sources */,
+				CEF123D01988807F00E025FE /* RootView.m in Sources */,
+				CEF123AC1988806900E025FE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF123B31988806900E025FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF123C51988806900E025FE /* PFButtonTransferDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEF123BD1988806900E025FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF1239B1988806900E025FE /* PFButtonTransferDemo */;
+			targetProxy = CEF123BC1988806900E025FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEF123A81988806900E025FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF123A91988806900E025FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEF123C11988806900E025FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF123C21988806900E025FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF123C61988806900E025FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF123C71988806900E025FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF123C91988806900E025FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PFButtonTransferDemo/PFButtonTransferDemo-Prefix.pch";
+				INFOPLIST_FILE = "PFButtonTransferDemo/PFButtonTransferDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEF123CA1988806900E025FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PFButtonTransferDemo/PFButtonTransferDemo-Prefix.pch";
+				INFOPLIST_FILE = "PFButtonTransferDemo/PFButtonTransferDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CEF123CC1988806900E025FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PFButtonTransferDemo.app/PFButtonTransferDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PFButtonTransferDemo/PFButtonTransferDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PFButtonTransferDemoTests/PFButtonTransferDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CEF123CD1988806900E025FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PFButtonTransferDemo.app/PFButtonTransferDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PFButtonTransferDemo/PFButtonTransferDemo-Prefix.pch";
+				INFOPLIST_FILE = "PFButtonTransferDemoTests/PFButtonTransferDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF123971988806900E025FE /* Build configuration list for PBXProject "PFButtonTransferDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF123C61988806900E025FE /* Debug */,
+				CEF123C71988806900E025FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF123C81988806900E025FE /* Build configuration list for PBXNativeTarget "PFButtonTransferDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF123C91988806900E025FE /* Debug */,
+				CEF123CA1988806900E025FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEF123CB1988806900E025FE /* Build configuration list for PBXNativeTarget "PFButtonTransferDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF123CC1988806900E025FE /* Debug */,
+				CEF123CD1988806900E025FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF123941988806900E025FE /* Project object */;
+}
