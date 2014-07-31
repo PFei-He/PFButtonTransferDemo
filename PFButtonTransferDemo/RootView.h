@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-UIButton *buttonExtern;
+UIButton *externButton;
 
 @protocol RootViewDelegate <NSObject>
 
@@ -28,12 +28,14 @@ UIButton *buttonExtern;
 
 @interface RootView : UIView
 {
-    UIButton *buttonDelegate;
-    UIButton *buttonBlock;
+    UIButton *delegateButton;
+    UIButton *blockButton;
 }
 
 ///属性按钮
-@property (nonatomic, strong) UIButton *buttonProperty;
+@property (nonatomic, strong) UIButton *propertyButton1;
+
+@property (nonatomic, strong) UIButton *propertyButton2;
 
 ///代理
 @property (nonatomic, assign) id<RootViewDelegate> delegate;
@@ -44,7 +46,7 @@ UIButton *buttonExtern;
 /**
  *  @brief 块方法
  */
-- (void)buttonBlock:(void(^)(UIButton *button))button;
+- (void)blockButton:(void(^)(UIButton *button))button;
 
 /**
  *  @brief 代理回调
