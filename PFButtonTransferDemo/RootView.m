@@ -132,14 +132,13 @@
 - (void)callbackDelegate
 {
     //监听代理方法
-    if (self.delegate && [self.delegate respondsToSelector:@selector(RootViewDelegateRequired:)]) {
-        [self.delegate RootViewDelegateRequired:delegateButton];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(RootViewDelegateRequired:)])
 //        [self.delegate performSelector:@selector(RootViewDelegateRequired:) withObject:delegateButton];
-    }
-    if (self.delegate && [self.delegate respondsToSelector:@selector(RootViewDelegateOptional:)]) {
-        [self.delegate RootViewDelegateOptional:delegateButton];
+        [self.delegate RootViewDelegateRequired:delegateButton];
+
+    if (self.delegate && [self.delegate respondsToSelector:@selector(RootViewDelegateOptional:)])
 //        [self.delegate performSelector:@selector(RootViewDelegateOptional:) withObject:delegateButton];
-    }
+        [self.delegate RootViewDelegateOptional:delegateButton];
 }
 
 @end
