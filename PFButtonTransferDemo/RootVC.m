@@ -10,11 +10,11 @@
 
 @interface RootVC ()
 {
-    RootView *rootView;
+    RootView *rootView;     //根视图
 
-    NSUInteger imageNum;
+    NSUInteger imageNum;    //图片数量
 
-    UIImage *image[8];
+    UIImage *image[8];      //创建图片数组
 }
 
 @end
@@ -38,6 +38,7 @@ extern const UIButton *externButton;
 {
     [super viewDidLoad];
 
+    //创建根视图
     rootView = [[RootView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.view = rootView;
 
@@ -51,6 +52,7 @@ extern const UIButton *externButton;
 
     //代理
     rootView.delegate = self;
+    //代理回调
     [rootView callbackDelegate];
 
     //单例
@@ -86,6 +88,7 @@ extern const UIButton *externButton;
     NSArray *imageArr = @[@"blue", @"cycn", @"green", @"magenta", @"orange", @"purple", @"red", @"yellow"];
     for (int i = 0; i < imageArr.count; i++) {
         NSString *imageStr = [NSString stringWithFormat:@"%@", imageArr[i]];/*[NSString stringWithFormat:imageArr[i], nil];*/
+        //获取图片数组
         image[i] = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"images.bundle/%@", imageStr] ofType:@"png"]];
     }
 }

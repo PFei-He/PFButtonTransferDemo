@@ -28,13 +28,14 @@ UIButton *externButton;
 
 @interface RootView : UIView
 {
-    UIButton *delegateButton;
-    UIButton *blockButton;
+    UIButton *delegateButton;   //代理
+    UIButton *blockButton;      //块
 }
 
-///属性按钮
+///属性一
 @property (nonatomic, strong) UIButton *propertyButton1;
 
+///属性二
 @property (nonatomic, strong) UIButton *propertyButton2;
 
 ///代理
