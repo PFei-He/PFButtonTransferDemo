@@ -14,22 +14,35 @@ UIButton *externButton;
 
 @required
 /**
- *  @brief 代理方法（必须）
+ *  @brief 代理一方法（必须）
  */
-- (void)RootViewDelegateRequired:(UIButton *)button;
+- (void)RootViewDelegateRequired1:(UIButton *)button;
+
+/**
+ *  @brief 代理二方法（必须）
+ */
+- (void)RootViewDelegateRequired2;
 
 @optional
 /**
- *  @brief 代理方法（可选）
+ *  @brief 代理一方法（可选）
  */
-- (void)RootViewDelegateOptional:(UIButton *)button;
+- (void)RootViewDelegateOptional1:(UIButton *)button;
+
+/**
+ *  @brief 代理二方法（可选）
+ */
+- (void)RootViewDelegateOptional2;
 
 @end
 
+typedef void (^PFBlcok)();
+
 @interface RootView : UIView
 {
-    UIButton *delegateButton;   //代理
-    UIButton *blockButton;      //块
+    UIButton *delegateButton;   //代理一
+    UIButton *blockButton1;     //块一
+    UIButton *blockButton2;     //块二
 }
 
 ///属性一
@@ -44,15 +57,23 @@ UIButton *externButton;
 ///监听值
 @property (nonatomic, assign) NSUInteger KVONumber;
 
-/**
- *  @brief 块方法
- */
-- (void)blockButton:(void(^)(UIButton *button))button;
+///块二
+@property (nonatomic, copy)   PFBlcok block2;
 
 /**
- *  @brief 代理回调
+ *  @brief 块一方法
  */
-- (void)callbackDelegate;
+- (void)blockButton1:(void(^)(UIButton *button))button;
+
+/**
+ *  @brief 块二方法
+ */
+- (void)blockButton2:(void(^)())obj;
+
+/**
+ *  @brief 代理一回调
+ */
+- (void)callbackDelegate1;
 
 @end
 

@@ -45,15 +45,20 @@ extern const UIButton *externButton;
     //获取背景图片
     [self background];
 
-    //块
-    [rootView blockButton:^(UIButton *button) {
+    //块一
+    [rootView blockButton1:^(UIButton *button) {
         [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    }];
+
+    //块二
+    [rootView blockButton2:^{
+        [self click];
     }];
 
     //代理
     rootView.delegate = self;
-    //代理回调
-    [rootView callbackDelegate];
+    //代理一回调
+    [rootView callbackDelegate1];
 
     //单例
     [[RootViewSingleton sharedInstance].sharedButton addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
@@ -107,18 +112,31 @@ extern const UIButton *externButton;
 
 #pragma mark - RootViewDelegate Methods
 
-//代理方法（必须实现）
-- (void)RootViewDelegateRequired:(UIButton *)button
+//代理一方法（必须实现）
+- (void)RootViewDelegateRequired1:(UIButton *)button
 {
     [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
 }
 /*
-//代理方法（可选实现）
-- (void)RootViewDelegateOptional:(UIButton *)button
+//代理一方法（可选实现）
+- (void)RootViewDelegateOptional1:(UIButton *)button
 {
  [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
 }
  */
+
+//代理二方法（必须实现）
+- (void)RootViewDelegateRequired2
+{
+    [self click];
+}
+/*
+//代理二方法（可选实现）
+- (void)RootViewDelegateOptional2
+{
+    [self click];
+}
+*/
 #pragma mark - KVO Methods
 
 //KVO监听的方法，当监听的值发生改变时，该方法就会被调用（系统方法）
