@@ -23,16 +23,17 @@
         [self addSubview:blockButton1];
 
         //块二
-        blockButton2 = [UIButton buttonWithType:UIButtonTypeSystem];
+        UIButton *blockButton2 = [UIButton buttonWithType:UIButtonTypeSystem];
         blockButton2.frame = CGRectMake(110, 100, 100, 30);
         [blockButton2 setTitle:@"Block2" forState:UIControlStateNormal];
+        [blockButton2 addTarget:self action:@selector(block2Action) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:blockButton2];
 
         //代理一
-        delegateButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        delegateButton.frame = CGRectMake(110, 130, 100, 30);
-        [delegateButton setTitle:@"Delegate1" forState:UIControlStateNormal];
-        [self addSubview:delegateButton];
+        delegateButton1 = [UIButton buttonWithType:UIButtonTypeSystem];
+        delegateButton1.frame = CGRectMake(110, 130, 100, 30);
+        [delegateButton1 setTitle:@"Delegate1" forState:UIControlStateNormal];
+        [self addSubview:delegateButton1];
 
         //代理二
         UIButton *delegateButton2 = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -149,7 +150,6 @@
 - (void)blockButton2:(void (^)())obj
 {
     self.block2 = obj;
-    [blockButton2 addTarget:self action:@selector(block2Action) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark - Callback Delegate
@@ -160,11 +160,11 @@
     //监听代理方法
     if (self.delegate && [self.delegate respondsToSelector:@selector(RootViewDelegateRequired1:)])
 //        [self.delegate performSelector:@selector(RootViewDelegateRequired1:) withObject:delegateButton];
-        [self.delegate RootViewDelegateRequired1:delegateButton];
+        [self.delegate RootViewDelegateRequired1:delegateButton1];
 
     if (self.delegate && [self.delegate respondsToSelector:@selector(RootViewDelegateOptional1:)])
 //        [self.delegate performSelector:@selector(RootViewDelegateOptional1:) withObject:delegateButton];
-        [self.delegate RootViewDelegateOptional1:delegateButton];
+        [self.delegate RootViewDelegateOptional1:delegateButton1];
 }
 
 //代理二回调

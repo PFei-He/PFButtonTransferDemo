@@ -40,9 +40,8 @@ typedef void (^PFBlcok)();
 
 @interface RootView : UIView
 {
-    UIButton *delegateButton;   //代理一
+    UIButton *delegateButton1;   //代理一
     UIButton *blockButton1;     //块一
-    UIButton *blockButton2;     //块二
 }
 
 ///属性一
